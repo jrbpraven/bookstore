@@ -1,0 +1,13 @@
+GET http://localhost:4004/catalog/Books
+
+###
+POST http://localhost:4004/catalog/Books
+Content-Type: application/json
+
+{"ID": 10, "title": "this is my new book: Streifeneder"}
+
+###
+POST http://localhost:4004/catalog/Orders
+Content-Type: application/json
+
+{"ID": "1eb45051-9e5c-4ba2-b540-fdbd85db95bb", "book_ID": 421, "quantity": 10}
